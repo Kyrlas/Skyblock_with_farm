@@ -11,7 +11,8 @@
       ],
       "biome": "minecraft:plains",
       "features": false,
-      "lakes": false
+      "lakes": false,
+      "structure_overrides": []
     }
   }
 }
