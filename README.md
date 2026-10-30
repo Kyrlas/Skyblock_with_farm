@@ -1,26 +1,26 @@
 # Vanilla Skyblock & Farm World Datapack
 
-Bring back that classic 2012-era Skyblock server feeling—in vanilla single-player Minecraft.
+Bring back that classic 2010-2012'-era Skyblock server feeling—in vanilla single-player Minecraft.
 
-Build your island in a void dimension, then visit the normal Overworld to explore and gather resources. Carry your items freely between both worlds and enjoy building in the sky without being limited to the resources on your starting island.
+Build your island in a void dimension, then visit the normal Overworld to explore and gather resources. Your items, XP, and equipped items will all travel with you
 
-No server setup, mod loader, or extra recipes required. Just a datapack.
+No server setup, mod loader, or extra recipes required. It's just a datapack.
 
 **Target version:** Minecraft Java Edition 26.3  
 **Support:** Single-player only. Multiplayer is not currently supported.
 
-## 🌟 Features
+##  Features
 
 - **Super Lightweight:** No Forge, Fabric, or server plugins required. It's a pure Vanilla datapack.
 - **Automatic setup:** Creates a custom Skyblock dimension and places your starting island on your first visit.
 - **Saved farm hub:** Saves your initial Overworld position once and uses that location as the centre for future returns. The hub persists across saves and restarts.
 - **Surface landing:** Returning to the farm world selects a landing height near the saved hub, rather than relying on a fixed Y coordinate or a loaded marker entity.
 - **Free inventory transfer:** Take your inventory, armour, offhand items, and XP between dimensions.
-- **Persistent island:** Your builds and chest contents remain when you leave, return, or restart the game.
+- **Persistent island:** Your builds and chest contents remain when you leave, return, or restart the game. 
 - **Recoverable farm teleports:** If the return command fails or hub coordinates are missing, the pack displays an error and lets you retry.
 - **Respawn-aware travel:** The trigger checks your current dimension, so dying and respawning in another dimension does not reverse the travel direction.
 
-## 🌿 Choose Your Version
+## Choose Your Version
 
 Two variants offer different styles of Skyblock:
 
@@ -28,15 +28,14 @@ Two variants offer different styles of Skyblock:
 
 A void dimension with Overworld biome variety, including biome-dependent weather and colours. Snowy areas offer possibilities that a plains-only island does not.
 
-**Known trade-off:** Floating vanilla structures and world-generation features can appear. Choose this version if you value biome variety and do not mind encountering them.
-
+**Known trade-off:** Floating vanilla structures (you'll see a **lot** of Trial Chambers) and world-generation (like the Ice Stuff at the bottom of frozen Oceans) features can appear. CHose this version if you want the biome variety and don't mind the structures 
 ### Classic Flat
 
 A plains-only void intended for the traditional Skyblock experience: your starting island surrounded by empty space, without the floating structures and features of the multi-biome variant.
 
-**Install only one variant per world.** Switching variants in an existing world has not been tested; already generated chunks will not automatically regenerate to match the other variant.
+**Install only one variant per world.** Switching variants in an existing world has not been tested and will probably corrupt your world, so don't do it 
 
-## 🚀 Installation
+## Installation
 
 ### New world
 
@@ -57,7 +56,7 @@ The pack captures your initial Overworld position automatically. You do not need
 
 Do not open and save a world with the pack removed while it still depends on the custom Skyblock dimension. First-time installation into an existing world has not been validated; the intended setup is installation during world creation.
 
-## 🎮 How to Play
+## How to Play
 
 Type this command in chat:
 
@@ -71,17 +70,17 @@ Type this command in chat:
 | Overworld | Your Skyblock island |
 | Nether or End | Your Skyblock island |
 
-The farming world is the normal Overworld, not an additional copy. The hub is your captured initial position—not a live reference to the world spawn or your bed.
+The farming world is the normal Overworld, not an additional copy. Teleporting to the farm world/overworld will always bring you to the initially captured position (I've used this variant because Minecraft will always place you in a safe spot when first creating a new World; if i used 0 0 you might end up in the middle of the ocean) and is not the world spawn or your last position 
 
 Your bed controls where you respawn after death. After respawning, the next trigger uses the dimension you are actually in.
 
 ## 💾 Performance and Testing
 
-In the creator's testing, Minecraft memory usage was usually around **3 GB**, with brief spikes to approximately **5 GB**. These figures describe the Minecraft session as a whole, not memory used exclusively by the datapack.
+In my testing, Minecraft memory usage was usually around **3 GB**, with brief spikes to approximately **5 GB**. These figures describe the Minecraft session as a whole, not memory used exclusively by the datapack. I did the tests with Shaders and a texture pack, so your results will vary 
 
 Memory use and loading times depend on your settings, hardware, and world. If you encounter memory pressure, you can try allocating more RAM in your launcher—for example, `-Xmx6G` on a computer with sufficient available memory. This is not an established minimum requirement or a guarantee against crashes.
 
-The current development build has passed creator testing for:
+The current build has passed testing for:
 
 - Travel in both directions without landing-related fall damage.
 - Hub persistence after saving and reopening the world.
@@ -92,20 +91,20 @@ The current development build has passed creator testing for:
 - Travel involving the Nether and End.
 - Cross-dimension respawning, including dying in the Nether and respawning at a Skyblock bed.
 
-These are manual tests on the creator's setup, not a guarantee for every world or configuration. Only Minecraft Java Edition **26.3** is currently targeted; compatibility with older versions is not claimed.
+These are my tests on my setup, not a guarantee for every world or configuration. Only Minecraft Java Edition **26.3** is currently targeted; compatibility with older versions is not claimed.
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - **Nether Skyblock:** Explore a custom Nether void dimension and portal linkage.
-- **Multiplayer support:** Investigate shared or separate islands and multiplayer-safe initialization. Multiplayer is outside the current supported scope.
+- **Multiplayer support:** Investigate shared or separate islands and multiplayer-safe initialisation. Multiplayer is outside the current supported scope.
 
-## 🤝 Contributing
+##  Contributing
 
 Issues and pull requests are welcome, including bug reports, performance improvements, and ideas for future multiplayer support.
 
 For bug reports, include your Minecraft version, datapack version and variant, steps to reproduce the issue, and relevant messages or logs. Please test fixes in a disposable world before using them in your main save.
 
-## ⚖️ License and Warranty
+## License and Warranty
 
 This project is licensed under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0).
 
